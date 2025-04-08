@@ -4,8 +4,8 @@ export async function POST(req) {
   const { username, password } = await req.json();
 
   if (
-    username === process.env.NEXT_PUBLIC_BASIC_AUTH_USERNAME &&
-    password === process.env.NEXT_PUBLIC_BASIC_AUTH_PASSWORD
+    username === process.env.BASIC_AUTH_USERNAME &&
+    password === process.env.BASIC_AUTH_PASSWORD
   ) {
     const res = NextResponse.json({ message: "Logged in successfully" });
 
