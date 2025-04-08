@@ -1,0 +1,3 @@
+{
+  "/api/twilio-logs/route": "app/api/twilio-logs/route.js"
+}
